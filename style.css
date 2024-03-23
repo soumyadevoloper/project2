@@ -1,0 +1,263 @@
+@font-face {
+    font-family: dream;
+    src: url(DREAM\ GLORY.ttf);
+}
+
+@font-face {
+    font-family: mono;
+    src: url(Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 50% ;
+    grid-template-rows: 30% 50% 20%;
+}
+
+#lefttopL{
+    /* background-color: aqua; */
+    padding: 30px;
+}
+
+#lefttopL #square{
+    height: 20px;
+    width: 20px;
+    rotate: 45DEG;
+    border-radius: 15%;
+    background-color: black;
+}
+
+#lefttopR{
+   /* background-color: blue; */
+    padding: 30px;
+    text-align: right;
+    
+}
+
+#lefttopR h4{
+    font-size: 20px;
+    font-family: dream;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#lefttopR h5{
+    
+    font-family: mono;
+    color: rgb(66, 66, 66);
+   
+}
+
+#lefttopR h6{
+    display: none;
+
+   
+}
+
+#leftC{
+    /* background-color: yellow; */
+    grid-column: 1 / 3;
+    grid-row: 2;
+    padding: 20px 70px;
+    
+}   
+
+#leftC h1{
+    font-family: dream;
+    font-size: 4vw;
+}
+
+#leftC h1:nth-child(2n){
+    /* background-color: red; */
+    text-align: center;
+}
+
+
+#leftB{
+    /* background-color: green; */
+    grid-row: 3;
+    grid-column: 1 / 3;
+    padding: 25px;
+}
+
+#leftB p{
+    width: 83%;
+    font-family: mono;
+    font-size: 16px;
+    color: rgb(53, 52, 52);
+    font-weight: 600;
+}
+
+#right{
+    /* background-color: red;  */
+    grid-column: 3;
+    grid-row: 1/4;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+#right video{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    
+     
+}
+
+#arrow{
+    position: absolute;
+    top: 43%;
+    left: 47.5%;
+    transform: translate(-50% -50%);
+    background-color: orangered;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+
+#arrow i{
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+#arrow:hover i{
+    transform: translateX(50%);
+}
+
+@media (max-width:600px) {
+    #main{
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 60px 30% 8.5%;
+    }
+
+    #lefttopL{
+
+        padding: 20px;
+    }
+    
+    #lefttopL #square{
+        height: 15px;
+        width: 15px;
+    }
+    
+    #lefttopR{
+        padding: 16px;
+        text-align: right;
+        /* display: none; */
+        
+    }
+    
+    #lefttopR h4{
+    display: none;
+    }
+    
+    #lefttopR h5{
+
+        display: none;
+       
+    }
+    
+    #leftC{
+
+        grid-column: 1 / 3;
+        grid-row: 2;
+        padding: 10px 70px;
+        
+    }   
+    
+    #leftC h1{
+        font-family: dream;
+        font-size: 11vw;
+        line-height: 14vw;
+    }
+    
+    #leftC h1:nth-child(2n){
+
+        text-align: right;
+    }
+    
+    
+    #leftB{
+
+        grid-row: 3;
+        grid-column: 1 / 3;
+        padding: 10px 30px;
+    }
+    
+    #leftB p{
+        width: 90%;
+        font-size: 9px;
+        font-weight: 600;
+    }
+    
+    #right{
+        grid-column: 3;
+        grid-row: 1/4;
+        padding: 10px;
+        padding-right: 90px;
+    }
+    
+    #right video{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+        
+         
+    }
+    
+    #arrow{
+        top: 44%;
+        left: 45%;
+        padding: 5px;
+        rotate: 90deg;
+       
+    }
+    
+    #arrow i{
+        font-size: 20px;
+        font-weight: 100;
+        color: #fff;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #arrow:hover i{
+        transform: translateX(50%);
+    }
+
+    #right{
+        /* background-color: red;  */
+        grid-column: 1/4;
+        grid-row: 4;
+        padding: 10px;
+        padding-left: 50px;
+    }    
+
+    #lefttopR h6{
+        display: initial;
+        font-size: 20px;
+       
+    }
+
+}
